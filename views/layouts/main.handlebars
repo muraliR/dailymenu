@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daily Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" type="text/css" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+      /* TODO */
+    </style>
+  </head>
+
+  <body>
+    <div class="app-page" data-page="home">
+        <div class="app-topbar blue">
+            <div class="app-title">Daily Menu - Search Restaurant</div>
+        </div>
+        <div class="app-content">
+            <input id="search_input" class="app-input no-icon-android" type="search" placeholder="Search...">
+            <div class="loader hidden"><i class="fa fa-spinner fa-spin fa-3x"></i></div>
+            <div class="results-placeholder">
+                <div class="placeholder search"><span></span>Search your desired Restaurants</div>
+            </div>
+
+            <div class="app-section hidden result-section">
+                <div class="no-results-found hidden">
+                    <p> No Results Found </p>
+                </div>
+                <ul class="app-list restaurants-results">
+                    <li class="restaurant">
+                        <div class="result-image">
+                            <!-- <a href="" class="resid">
+                                <img src="" width="50" height="50" class="img-thumb" style="display:none;">
+                            </a> -->
+                        </div>
+                        <div class="result-content">
+
+                            <p class="directions" style="display:none;"></p>
+                            <div style="display: flex;">
+                                <span>
+                                    <p class="restaurant-name" style="font-size: 16px;"></p>
+                                </span>
+                                <span class="map-redirection" style="margin-left:auto;">
+                                    <a href="#" data-app-target="" class="directions"><i class="fa fa-map-marker"></i></a>
+                                </span>
+                            </div>
+                            <span class="restaurant-address"></span>
+                            <p class="restaurant-locality"></p>
+                        </div>
+                        
+                        <div class="result-map">
+                            <div class="app-button orange menu-redirection">
+                                <div data-app-target="" class="resid menu-redirection-href">
+                                    <i class="fa fa-list"></i> Get Menu</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="app-page" data-page="results">
+        <div class="app-topbar blue">
+            <div class="app-topbar blue">
+              <div class="app-button left" data-back data-autotitle></div>
+              <div class="app-title">Search Results</div>
+            </div>
+        </div>
+        <div class="app-content">
+            
+        </div>
+    </div> -->
+
+    <script type="text/javascript" src="/js/zepto.js"></script>
+    <script type="text/javascript" src="/js/app.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
