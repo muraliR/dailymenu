@@ -9,6 +9,7 @@ app.get('/', function(req, res) {
 
 app.get('/api/search', function(req, res) {
 	search_query = req.query["search_query"];
+	console.log(search_query);
 	request({
 	    headers: {
 	      'user-key': 'a264a9ad763b2a66d83aa1c7004d1b7a'
