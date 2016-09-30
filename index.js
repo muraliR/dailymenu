@@ -10,11 +10,13 @@ app.get('/', function(req, res) {
 app.get('/api/search', function(req, res) {
 	search_query = req.query["search_query"];
 	console.log(search_query);
+	url = 'https://developers.zomato.com/api/v2.1/search?entity_type=city&q=' + search_query;
+	console.log(url);
 	request({
 	    headers: {
 	      'user-key': 'a264a9ad763b2a66d83aa1c7004d1b7a'
 	    },
-	    uri: 'https://developers.zomato.com/api/v2.1/search?entity_type=city&q=' + search_query,
+	    uri: url,
 	    method: 'GET'
 	}, function (err, apiRes, body) {
 		console.log(apiRes.body);
