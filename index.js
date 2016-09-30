@@ -16,7 +16,7 @@ app.get('/api/search', function(req, res) {
 	    uri: 'https://developers.zomato.com/api/v2.1/search?entity_type=city&q=' + search_query,
 	    method: 'GET'
 	}, function (err, apiRes, body) {
-		console.log(apiRes);
+		console.log(apiRes.body);
 	    if(err){
 	    	res.status(500).json({ success : false, message : 'Something went wrong!! Please try again later!!' });
 	    }
