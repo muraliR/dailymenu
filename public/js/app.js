@@ -60,7 +60,7 @@ function loadResults(page,restaurants){
     
     $(page).delegate('.map-redirection','click',function(){
         var target = $(this).find('.directions').attr('data-app-target');
-        window.open(target, "_self");
+        window.open(target);
     })
 
     $(page).delegate('.menu-redirection','click',function(){
